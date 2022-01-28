@@ -15,6 +15,7 @@ namespace EFDbContext.Models
         [Required]
         public string Destination { get; set; }
         [Required]
+        [Range(1,int.MaxValue,ErrorMessage ="Cost should be greater than 0")]
         public string Cost { get; set; }
     }
 }
